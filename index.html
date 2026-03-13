@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You 💛</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="teddy-container"></div>
+
+<div class="container">
+
+<h1>Hey You 🌷</h1>
+
+<p id="message">Click this when you need a little reminder.</p>
+
+<button onclick="nextMessage()">Click Here ✨</button>
+
+<br><br>
+
+<div id="heart">💖</div>
+
+</div>
+
+<div id="musicPlayer" class="music-player">
+
+<div class="player-header">
+<span id="songTitle">Lany - You!</span>
+<button onclick="togglePlayer()">–</button>
+</div>
+
+<audio id="bgMusic">
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="controls">
+
+<button onclick="toggleMusic()" id="playBtn">▶</button>
+
+<input type="range" id="progressBar" value="0" step="1">
+
+<div class="time">
+<span id="currentTime">0:00</span>
+<span id="duration">0:00</span>
+</div>
+
+<div class="bible-panel">
+
+<h3>Just for you</h3>
+
+<p id="bibleQuote">
+Click here for a surprise!
+</p>
+
+<p id="bibleRef"></p>
+
+<button onclick="generateVerse()">Press this ✨</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
